@@ -1,18 +1,20 @@
 import { Link } from "react-router";
 import logo from "../assets/images/logo.webp";
-import { usePokemon } from "../contexts/Pokemon";
 
 export default function Nav() {
-    const { handleSearch, searchString } = usePokemon();
     return (
         <header className="bg-blue-600 shadow-lg">
             <div className="container mx-auto flex justify-between items-center p-4">
-                <Link to="/" className="w-16">
+                <Link
+                    to="/"
+                    className="flex items-center text-xl font-bold text-white"
+                >
                     <img
                         src={logo}
-                        className="logo react"
+                        className="w-16 mr-2"
                         alt="Pokemon Explorer"
                     />
+                    Pokémon Explorer
                 </Link>
 
                 <nav>

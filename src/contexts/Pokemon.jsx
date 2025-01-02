@@ -66,6 +66,7 @@ const PokemonProvider = ({ children }) => {
     }, []);
 
     useEffect(() => {
+        setLoading(true);
         let filteredData = pokemons.filter((pokemon) =>
             pokemon.name.includes(searchString)
         );

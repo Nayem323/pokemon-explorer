@@ -38,7 +38,7 @@ export default function Toolbar() {
             </div>
 
             {/* Search Input */}
-            <div className="flex items-center space-x-2 sm:mt-0 mt-4">
+            <div className="flex items-center space-x-2 md:mt-0 mt-4">
                 <label
                     htmlFor="search"
                     className="text-sm font-medium text-gray-700"
@@ -56,7 +56,7 @@ export default function Toolbar() {
             </div>
 
             {/* Sort Dropdown */}
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-2 md:mt-0 mt-4">
                 <label
                     htmlFor="sort"
                     className="text-sm font-medium text-gray-700"
